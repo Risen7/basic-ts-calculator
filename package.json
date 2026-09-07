@@ -1,0 +1,10 @@
+{
+  "name": "typescript-calculator",
+  "private": true,
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}

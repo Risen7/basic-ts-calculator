@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample WEb</title>
+    <title>TypeScript Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello world</h1>
+    <main class="calculator" aria-label="Calculator">
+        <div class="calculator__header">
+            <p class="eyebrow">Everyday arithmetic</p>
+            <h1>Calculate<span>.</span></h1>
+        </div>
+
+        <section class="display" aria-live="polite">
+            <p id="previous-operation" class="display__operation"></p>
+            <output id="display-value" class="display__value">0</output>
+        </section>
+
+        <section class="keypad" aria-label="Calculator keys">
+            <button class="key key--utility" data-action="clear" type="button">AC</button>
+            <button class="key key--utility" data-action="delete" type="button" aria-label="Delete last digit">DEL</button>
+            <button class="key key--operator" data-operation="divide" type="button" aria-label="Divide">÷</button>
+            <button class="key key--operator" data-operation="multiply" type="button" aria-label="Multiply">×</button>
+
+            <button class="key" data-number="7" type="button">7</button>
+            <button class="key" data-number="8" type="button">8</button>
+            <button class="key" data-number="9" type="button">9</button>
+            <button class="key key--operator" data-operation="subtract" type="button" aria-label="Subtract">−</button>
+
+            <button class="key" data-number="4" type="button">4</button>
+            <button class="key" data-number="5" type="button">5</button>
+            <button class="key" data-number="6" type="button">6</button>
+            <button class="key key--operator" data-operation="add" type="button" aria-label="Add">+</button>
+
+            <button class="key" data-number="1" type="button">1</button>
+            <button class="key" data-number="2" type="button">2</button>
+            <button class="key" data-number="3" type="button">3</button>
+            <button class="key key--equals" data-action="equals" type="button">=</button>
+
+            <button class="key key--zero" data-number="0" type="button">0</button>
+            <button class="key" data-action="decimal" type="button">.</button>
+        </section>
+        <p class="hint">Use your keyboard for a faster calculation</p>
+    </main>
+    <script src="calculator.js"></script>
 </body>
 </html>
