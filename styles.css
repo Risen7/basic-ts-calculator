@@ -33,8 +33,8 @@ h1 { margin: 0; font-size: clamp(2.5rem, 12vw, 4.5rem); line-height: 0.9; letter
 h1 span { color: var(--accent); }
 
 .display { min-height: 150px; padding: 24px; display: flex; flex-direction: column; justify-content: end; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; box-shadow: 0 20px 55px rgba(0, 0, 0, 0.26); }
-.display__operation { min-height: 1.4em; margin: 0 0 10px; color: var(--muted); font: 500 0.95rem 'DM Mono', monospace; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.display__value { display: block; font: 500 clamp(2.2rem, 10vw, 3.5rem) 'DM Mono', monospace; letter-spacing: -0.08em; text-align: right; overflow: hidden; text-overflow: ellipsis; }
+.display__operation { min-height: 1.4em; margin: 0 0 10px; color: var(--muted); font: 500 0.95rem 'DM Mono', monospace; text-align: right; text-overflow: ellipsis; white-space: nowrap; }
+.display__value { display: block; font: 500 clamp(2.2rem, 10vw, 3.5rem) 'DM Mono', monospace; letter-spacing: -0.08em; text-align: right; text-overflow: ellipsis; }
 
 .keypad { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 14px; }
 .key { min-height: 68px; border: 1px solid transparent; border-radius: 4px; color: var(--ink); background: var(--key); cursor: pointer; font: 500 1.25rem 'DM Mono', monospace; transition: background 140ms ease, transform 140ms ease, border-color 140ms ease; }
